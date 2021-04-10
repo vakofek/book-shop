@@ -23,18 +23,18 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./index.html">Store</a>
+            <a class="nav-link active" data-trans="nav-store"  aria-current="page" href="./index.html">Store</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./store.cart.html">Cart</a>
+            <a class="nav-link" data-trans="nav-cart"  href="./store.cart.html">Cart</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./manage.bookshop.html">Manager-loggin</a>
+            <a class="nav-link" data-trans="nav-manage"  href="./manage.bookshop.html">Manager-loggin</a>
           </li>
         </ul>
         <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
+          <input class="form-control me-2" data-trans="nav-search" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" data-trans="nav-search" type="submit">Search</button>
         </form>
       </div>
     </div>
@@ -46,11 +46,11 @@
   <table class="table">
     <thead>
       <tr>
-        <th scope="col">Book name</th>
-        <th scope="col">Price</th>
-        <th scope="col">Qty</th>
-        <th scope="col">Final price</th>
-        <th scope="col"></th>
+        <th data-trans="cart-table-book-name" scope="col">Book name</th>
+        <th data-trans="cart-table-book-price" scope="col">Price</th>
+        <th data-trans="cart-table-qty" scope="col">Qty</th>
+        <th data-trans="cart-table-total-price" scope="col">Total price</th>
+        <th data-trans="cart-table-remove" scope="col"></th>
       </tr>
     </thead>
     <tbody class="cart-body-table"></tbody>
@@ -63,6 +63,8 @@
 
   <script src="./js/util.js"></script>
   <script src="./js/storage.service.js"></script>
+  <script src="./js/i18n-service.js"></script>
+
   <script src="./js/bookshop.service.js"></script>
   <script src="./js/bookshop.controller.js"></script>
   <script src="./js/store.service.js"></script>

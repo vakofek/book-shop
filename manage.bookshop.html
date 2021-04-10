@@ -11,7 +11,7 @@
   <title>Store manager page</title>
 </head>
 
-<body>
+<body onload="onManageInit()">
   <!-- NAV BAR  -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
@@ -23,18 +23,18 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./index.html">Store</a>
+            <a class="nav-link active" data-trans="nav-store"  aria-current="page" href="./index.html">Store</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./store.cart.html">Cart</a>
+            <a class="nav-link" data-trans="nav-cart" href="./store.cart.html">Cart</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./manage.bookshop.html">Manager-loggin</a>
+            <a class="nav-link" data-trans="nav-manage" href="./manage.bookshop.html">Manager-loggin</a>
           </li>
         </ul>
         <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
+          <input class="form-control me-2" data-trans="nav-search" type="search" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" data-trans="nav-search" type="search" type="submit">Search</button>
         </form>
       </div>
     </div>
@@ -53,6 +53,8 @@
 
   <script src="./js/util.js"></script>
   <script src="./js/storage.service.js"></script>
+  <script src="./js/i18n-service.js"></script>
+
   <script src="./js/bookshop.service.js"></script>
   <script src="./js/bookshop.controller.js"></script>
   <script src="./js/store.service.js"></script>

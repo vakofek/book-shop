@@ -30,7 +30,11 @@ function _createBook(name, price) {
         name,
         price,
         id: makeId(),
-        summary:makeLorem(30),
+        summary:{
+            en: makeLoremEn(30),
+            he:makeLoremHe(30),
+            ar: makeLoremAr(30)
+        },
         imgUrl: makeImgUrl(name)
     };
 }

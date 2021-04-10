@@ -5,7 +5,7 @@
 function onCartInit() {
     // debugger
     renderCart();
-
+    doTrans();
     console.log(getCartBooks());
 }
 
